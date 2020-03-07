@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1-buster-slim-arm32v7
+WORKDIR /app
+
+# Copy binaries from local relative path to WORKDIR in image
+COPY bin/Release/netcoreapp3.1/linux-arm/publish/ ./
+
+ENTRYPOINT ["dotnet", "DockerConsoleAppLogger.dll"]
