@@ -12,7 +12,7 @@ namespace DockerConsoleAppLogger
             while (i < 10000)
             {
                 Console.WriteLine($"Log message {i} from Docker Console App");
-                Thread.Sleep(2000);
+                Thread.Sleep(1500);
                 i++;
             }
         }
